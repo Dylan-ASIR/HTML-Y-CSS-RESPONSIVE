@@ -1,0 +1,85 @@
+/* Ocupamos toda la página */
+*{
+    box-sizing : border-box;
+}
+/* Configuración del cuerpo de la web */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;/* Se puede utilizar cover */
+}
+/* Configuración de la clase contenedor */
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+/* Configuración de la clase formulario */
+.formulario{
+    background-color: white;
+    margin-top: 100px;
+}
+/* Configuración del titulo del formulario */
+h1{
+    padding-top: 20px;
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+}
+/* Configuración de las distintas imagenes*/
+img{
+    padding-top: 4px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+/*-- Configuración de los distintos inputs --*/
+input[type="text"], input[type="password"], input[type="mail"]{
+    text-align: center;
+    font-size: 24px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+/* Separación de los distintos inputs */
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+/* Configuración de los distintos botones */
+.button{
+    border: none;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: cadetblue;
+}
+p{
+    text-align: center;
+}
+/* El link hacia los distintos formularios */
+.link{
+    text-decoration: none;
+    color: black;
+    font-weight: 600px;
+}
+.link:hover{
+    color: cadetblue;
+}
+/* Hacemos que nuestra página sea un poco responsive */
+@media (min-width: 768px){
+    .formulario{
+        margin-top: 150px;
+        width: 500px;
+        margin: auto;
+        border-radius: 2%;
+    }
+}
